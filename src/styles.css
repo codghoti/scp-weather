@@ -1,0 +1,69 @@
+body {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  background-color: #03a9f4;
+  border-radius: 25px;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+.city-search-field {
+  border: none;
+}
+
+#current-location-button {
+  margin: 10px auto;
+}
+
+.current-weather-row,
+.forecast-row {
+  font-weight: 900;
+}
+.current-weather-row {
+  height: 200px;
+  text-align: center;
+}
+
+#current-city {
+  font-size: 50px;
+}
+
+/* .current-date-time {
+  font-size: 25px;
+} */
+
+.current-temp {
+  font-size: 50px;
+}
+
+#other-temp-scale {
+  font-weight: 200;
+  font-size: 20px;
+  vertical-align: super;
+}
+
+#change-temp-scale {
+  color: #444;
+}
+
+.weather-description-col i {
+  font-size: 125px;
+}
+
+.current-weather-description {
+  font-size: 50px;
+}
+
+.forecast-row {
+  height: 150px;
+  text-align: center;
+}
+
+.forecast-row i {
+  font-size: 75px;
+}

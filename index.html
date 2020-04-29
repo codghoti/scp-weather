@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather!</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/484bb9da6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container border">
+      <div class="row search-row">
+        <div class="col-2"></div>
+        <div class="col-8 search-col">
+          <form class="form-inline" id="city-search-form">
+            <div class="form-group w-75">
+              <input
+                type="text"
+                class="form-control-lg city-search-field w-100"
+                id="city-search-input"
+                placeholder="What's the weather in..."
+                autofocus="on"
+                autocomplete="off"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg city-search-button w-25"
+            >
+              Search
+            </button>
+          </form>
+          <br>
+          
+        </div>
+        <div class="col-2"><button class="btn btn-primary btn-sm" id="current-location-button">Current Location</button></div>
+      </div>
+      <div class="row current-weather-row">
+        <div class="col-6 city-temp-col border-right">
+          <span id="current-city">Phuket</span><br /><span id="current-date-time"></span></br><span
+            class="current-temp"
+            ><span id="current-temp-number"></span> º<span id="current-temp-scale">C</span>  <span id="other-temp-scale">|<a href="#" id="change-temp-scale">ºF</a></span></span
+          >
+        </div>
+        <div class="col-6 weather-description-col">
+        <i class="fas fa-sun"></i><br /><span
+            class="current-weather-description"
+            >Sunny</span
+          >
+        </div>
+      </div>
+      <div class="row forecast-row">
+        <div class="col forecast-col border-right"><span id="day-2"></span><br /><i class="fas fa-sun"></i><br />16º</div>
+        <div class="col forecast-col border-right"><span id="day-3"></span><br /><i class="fas fa-cloud"></i><br />12º</div>
+        <div class="col forecast-col border-right"><span id="day-4"></span><br /><i class="fas fa-cloud-showers-heavy"></i><br />12º</div>
+        <div class="col forecast-col border-right"><span id="day-5"></span><br /><i class="fas fa-cloud"></i><br />13º</div>
+        <div class="col forecast-col"><span id="day-6"></span><br /><i class="fas fa-cloud-sun"></i><br />15º</div>
+      </div>
+    </div>
+
+    <script src="src/weather.js"></script>
+  </body>
+</html>
