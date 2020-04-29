@@ -3,7 +3,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.container {
+#weather-container {
   background-color: #03a9f4;
   border-radius: 25px;
 }
@@ -66,4 +66,8 @@ body {
 
 .forecast-row i {
   font-size: 75px;
+}
+
+#open-source-line {
+  font-size: 15px;
 }
